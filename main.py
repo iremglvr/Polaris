@@ -1,6 +1,9 @@
 # Project Polaris
-# Day 5
+# Day 7
 # Founder: İrem
+version="v0.1.0"
+
+from datetime import datetime
 
 print("Hello, I'm Po!")
 
@@ -21,24 +24,45 @@ while menu==1 :
 
     print("====== PO ======")
     print("1 - Greetings")
-    print("2 - Tell me my age")
-    print("3 - Exit")
+    print("2 - My age")
+    print("3 - Today's Date")
+    print("4 - About Po")
+    print("5 - Exit")
     print()
 
     choice = input("Your choice: ")
+
+    aboutPo=f"""========== ABOUT PO ==========
+Hello!
+
+My name is Polaris.
+You can call me Po.
+
+I was born on July 6, 2026.
+
+I am your personal AI assistant.
+Version: {version}
+=============================="""
 
 
     #process user's selection
     if choice == "1":
         if name == "İrem":
-            print("Welcome back Founder!")
+            print("How can I help you today?")
         else:
-            print(f"Nice to meet you again, {name}!")
+            print(f"Hello again, {name}!")
 
     elif choice == "2":
         print(f"You are {age} years old, {name}.")
 
     elif choice == "3":
+        today=datetime.now()
+        print(f"Today's Date: {today.strftime("%d.%m.%Y")}")
+
+    elif choice == "4":
+        print(aboutPo)
+
+    elif choice == "5":
         print(f"Goodbye, {name}!")
         print("Have a great day!")
         menu=0

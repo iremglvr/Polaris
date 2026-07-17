@@ -8,8 +8,9 @@ The goal of this project is not only to build an AI assistant, but also to docum
 
 ## Status
 
-**Version:** Pre-Alpha
+**Stage:** Pre-Alpha
 
+**Version:** v0.1.0
 ---
 
 ## Founder
